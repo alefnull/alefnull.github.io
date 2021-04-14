@@ -3,6 +3,11 @@
     margin: 0 auto;
     text-decoration: none;
     font-size: 12pt;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none; 
 }
 html, body {
     height: 100%;
