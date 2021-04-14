@@ -21,9 +21,11 @@ h1 {
     font-family: "Comfortaa", cursive;
     font-size: 5em;
     color: #1E90FF;
+    text-shadow: 0 0 10px #1E90FF, 0 0 30px #1E90FF;
 }
 h2 {
     font-family: "Comfortaa", cursive;
     font-size: 2em;
     color: #ff1493;
+    text-shadow: 0 0 5px #ff1493, 0 0 10px #ff1493, 0 0 15px #ff1493, 0 0 20px #ff1493;
 }
