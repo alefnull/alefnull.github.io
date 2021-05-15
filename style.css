@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 * {
-    margin: 0 auto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     text-decoration: none;
-    font-size: 12pt;
+    font-size: 40pt;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select:none;
@@ -10,36 +12,45 @@
     -o-user-select:none; 
 }
 html, body {
+    font-family: "Comfortaa", cursive;
     height: 100%;
     display: grid;
     place-items: center;
     background: #000;
 }
-.page-container {
-    display: grid;
-}
-.content {
-    display: grid;
-    line-height: 0.9;
+.container {
+    max-width: 600px;
+    margin: auto;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 h1, h2 {
     transition: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    margin-bottom: 5px;
 }
 h1 {
-    font-family: "Comfortaa", cursive;
-    font-size: 5em;
     color: #1E90FF;
     text-shadow: 0 0 10px #1E90FF, 0 0 30px #1E90FF;
 }
-h1:hover {
-    text-shadow: 0 0 10px #1E90FF;
-}
 h2 {
-    font-family: "Comfortaa", cursive;
-    font-size: 2em;
+    font-size: 36px;
     color: #ff1493;
     text-shadow: 0 0 5px #ff1493, 0 0 10px #ff1493, 0 0 15px #ff1493, 0 0 20px #ff1493;
 }
-h2:hover {
-    text-shadow: 0 0 10px #ff1493;
+.cursor {
+    font-size: 38pt;
+    animation: 1s cursor-blink step-end infinite;
+}
+@keyframes cursor-blink {
+   from, to {
+       color: transparent;
+       text-shadow: none;
+   } 
+   50% {
+       color: #1E90FF;
+       text-shadow: 0 0 10px #1E90FF, 0 0 30px #1E90FF;
+   }
 }
